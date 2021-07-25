@@ -3,7 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
-    <ion-title>Sign in User</ion-title>
+    <ion-title>Iniciar sesión</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -15,7 +15,7 @@
     </ion-item> 
 
     <ion-item lines="full">
-      <ion-label position="floating">Password</ion-label>
+      <ion-label position="floating">contraseña</ion-label>
       <ion-input type="password" #password required></ion-input>
     </ion-item>
 
@@ -27,17 +27,7 @@
 
     <span class="divider line one-line">or</span>
 
-    <ion-row>
-      <ion-col> 
-        <ion-button 
-         type="submit" 
-         color="danger"
-         (click)="authService.GoogleAuth()" 
-         expand="block">
-           Login with Google
-        </ion-button>
-      </ion-col>
-    </ion-row>
+
 
   </form>
 </ion-content>
